@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% -20.71%, #e6f58f 0, #e9eb7f 10%, #ecdf6e 20%, #efd25d 30%, #f1c44d 40%, #f2b53c 50%, #f3a52d 60%, #f59522 70%, #f8851d 80%, #fa741e 90%, #fc6324 100%);
+}
+
+.contente{
+    position: absolute;
+    margin-top: -45%;
+    margin-left: -55%;
+}
+
+.contente .title{
+    color: #111;
+    font-size: 2em;
+}
+
+.contente .content{
+    color: #111;
+    font-size: 1.9em;
+    font-style: italic;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    background: #262626be;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container .box::before{
+    content: 'Angie';
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box::after{
+    content: '💛';
+    position: absolute;
+    top: 300px;
+    left:230px;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after{
+    opacity: 0.20;
+}
+
+.container .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .name{
+    top: 18px;
+    opacity: 1;
+}
+
+.container .box .goPx{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    background: #f7c707;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .goPx{
+    bottom: 15px;
+    opacity: 1;
+}
+
+.container .box .angie {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 230px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+}
+
+.container .box:hover .angie{
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+.container .box .angie:hover{
+    width: 250px;
+}
+
+@media screen and (max-width: 480px){
+
+    body{
+        flex-direction: row;
+    }
+
+    .contente{
+        margin-top: -350%;
+        margin-left: -10%;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .contente .title{
+        font-size: 1.3em;
+    }
+    
+    .contente .content{
+        font-size: 1.1em;
+    }
+}
