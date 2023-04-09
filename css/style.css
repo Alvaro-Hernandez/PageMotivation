@@ -16,17 +16,17 @@ body{
 
 .contente{
     position: absolute;
-    margin-top: -45%;
+    margin-top: -43%;
     margin-left: -55%;
 }
 
 .contente .title{
-    color: #111;
+    color: #222;
     font-size: 2em;
 }
 
 .contente .content{
-    color: #111;
+    color: #222;
     font-size: 1.9em;
     font-style: italic;
 }
@@ -150,17 +150,17 @@ body{
     }
 
     .contente{
-        margin-top: -350%;
-        margin-left: -10%;
+        margin-top: -170%;
+        margin-left: -15%;
     }
     .container{
         margin-top: 100px;
     }
     .contente .title{
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
     
     .contente .content{
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 }
