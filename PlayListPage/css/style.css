@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% -20.71%, #e6f58f 0, #e9eb7f 10%, #ecdf6e 20%, #efd25d 30%, #f1c44d 40%, #f2b53c 50%, #f3a52d 60%, #f59522 70%, #f8851d 80%, #fa741e 90%, #fc6324 100%);
+}
+
+.boxTitle{
+    position: absolute;
+    margin-top: -68%;
+    margin-left: -40%;
+}
+
+.boxTitle .title{
+    color: #222;
+    font-size: 2em;
+}
+
+.boxTitle .textP{
+    color: #222;
+    font-size: 1.9em;
+    font-style: italic;
+}
+
+.boxTitle a{
+    text-decoration: none;
+}
+
+.container{
+    width:1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container .card .videoBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px){
+
+    .boxTitle{
+        margin-top: -688%;
+        margin-left: 5%;
+    }
+
+    .container{
+        margin-top: 100px;
+    }
+
+    .boxTitle .title{
+        font-size: 1.8em;
+    }
+    
+    .boxTitle .textP{
+        font-size: 1.3em;
+        margin-right: 2px;
+    }
+}

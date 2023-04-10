@@ -143,6 +143,18 @@ body{
     width: 250px;
 }
 
+.Copyright{
+    position: absolute;
+    margin-top: 45%;
+    text-align: center;
+}
+
+.Copyright .CopyT{
+    color: #fff;
+    font-size: 2em;
+    line-height: 17px;
+}
+
 @media screen and (max-width: 480px){
 
     body{
@@ -150,11 +162,12 @@ body{
     }
 
     .contente{
-        margin-top: -345%;
+        margin-top: -370%;
         margin-left: -12%;
     }
     .container{
         margin-top: 100px;
+        margin-bottom: 100px;
     }
     .contente .title{
         font-size: 1.8em;
@@ -162,5 +175,14 @@ body{
     
     .contente .content{
         font-size: 1.4em;
+    }
+
+    .Copyright{
+        margin-top: 375%;
+    }
+    
+    .Copyright .CopyT{
+        font-size: 2em;
+        line-height: 17px;
     }
 }
